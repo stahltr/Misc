@@ -1,4 +1,4 @@
-TITLE Programming Assignment #1     (project01.asm)
+TITLE Programming Assignment #1     (project01ish.asm)
 
 ; Author: Trevor Stahl
 ; Last Modified:
