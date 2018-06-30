@@ -5,50 +5,27 @@ TITLE Programming Assignment #1     (project01.asm)
 ; OSU email address: stahltr@oregonstate.edu
 ; Course number/section: CS_271_400_S2018
 ; Project Number: 01                Due Date: 4/15/2018
-; Description:  First display your name and program title on the output screen.
-;				Display instructions for the user. Prompt the user to enter two numbers.
-;				Calculate the sum, difference, product, (integer) quotient and remainder of the two numbers.
-;				Finally, display a terminating message saying goodbye.
-;
-;
-;				The main procedure must be divided into sections:
-;					introduction
-;					get the data
-;					calculate the required values
-;					display the results
-;					say goodbye
-;
-;	!The results of calculations must be stored in named variables before being displayed!
-;
-;	The program must be fully documented.
-;	This includes a complete header block for identification, description, etc.,
-;	and a comment outline to explain each section of code. 
-;
-;	You are not required to handle negative input or negative results.
-
-
-;-----------------------------------------------------------------------------------------------
-
-
-INCLUDE Irvine32.inc
+; Description: **removed to hide from google a bit**
+; and some strings chaged and obscured to also hide from google** 
+;not that this is not a mockable piece of code that you wouldnt want to learn from lol
 
 ; (insert constant definitions here)
 
 .data
 
 ;strings for prompts and messages roughly in order
-intro_1        BYTE "		Elementary Arithmetic in MASM by Trevor Stahl", 0
-extra_credit_1 BYTE "**EC1: Repeat until the user chooses to quit.", 0
-extra_credit_2 BYTE "**EC2: Validate that the second number is LESS than the first.", 0
-prompt_1       BYTE "This program calculates the sum, difference, product, (integer) quotient and remainder of 2 numbers", 0
+intro_1        BYTE "		Math in MASM by Trevor Stahl", 0
+extra_credit_1 BYTE "**EC1", 0
+extra_credit_2 BYTE "**EC2", 0
+prompt_1       BYTE "This pro gr-am calcu la-tes the s-um, dif-ference, prod-uct, (integer) quot-ient and remainder of 2 numbers", 0
 prompt_2       BYTE "Enter first number:", 0
 prompt_3       BYTE "Enter second number:", 0
-rmdr_1         BYTE "-!Remember to enter the larger number first!-", 0
-bad_inps       BYTE "The second number must be less than the first!", 0
-reRun_a        BYTE "Would you like to rerun the program with new inputs?", 0
-reRun_b        BYTE "If not, please enter any number OTHER than 1.", 0
-reRun_c        BYTE "If you do, please enter only the number 1, then press enter:", 0
-goodBye        BYTE "Program Ending - Impressed?  Bye!", 0
+rmdr_1         BYTE "-!Remember - t-o enter the larger number first!-", 0
+bad_inps       BYTE "Wow, The second nu mber must be less than the fir st!", 0
+reRun_a        BYTE "Wanna rerun the program with new inputs?", 0
+reRun_b        BYTE "If no, please enter a ny number OTHER than 1.", 0
+reRun_c        BYTE "Ifso please en ter only the number 1, then press enter:", 0
+goodBye        BYTE "Progr-am End--ing - Impr---essed?  Bye!", 0
 
 ;variables for the two numbers entered by user, initially = to ?
 number_1 DWORD ? ;first integer to enter
